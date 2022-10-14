@@ -26,6 +26,8 @@ export class AppComponent {
         {
           provide: TAB_BASED_DIALOG_CONTENTS, useValue: [
             {key: 'third', component: new ComponentPortal(FooComponent)},
+            {key: '42', component: new ComponentPortal(FooComponent)},
+            {key: '5', component: new ComponentPortal(FooComponent)},
           ]
         }
       ], parent: this.injector
